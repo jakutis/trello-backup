@@ -1,0 +1,32 @@
+{
+  "name": "trello-backup",
+  "version": "1.0.0",
+  "description": "Backup your data from Trello",
+  "main": "./lib/index.js",
+  "bin": "./lib/cli.js",
+  "dependencies": {
+    "bluebird": "^2.10.2",
+    "debug": "^2.2.0",
+    "got": "^4.2.0",
+    "lodash": "^3.10.1",
+    "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakutis/trello-backup.git"
+  },
+  "keywords": [
+    "trello",
+    "backup"
+  ],
+  "author": "Vytautas Jakutis <vytautas@jakut.is> (https://jakut.is)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jakutis/trello-backup/issues"
+  },
+  "homepage": "https://github.com/jakutis/trello-backup#readme"
+}
