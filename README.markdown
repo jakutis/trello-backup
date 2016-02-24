@@ -23,3 +23,5 @@ An example `config.json`:
         "89ABCDEF": "board-name"
       }
     }
+
+If the `boards` property is not defined, then all the boards are backed up.
