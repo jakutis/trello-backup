@@ -5,14 +5,14 @@
   "main": "./lib/index.js",
   "bin": "./lib/cli.js",
   "dependencies": {
-    "bluebird": "3.4.1",
-    "debug": "2.2.0",
-    "got": "6.3.0",
-    "lodash": "4.14.2",
+    "bluebird": "3.5.1",
+    "debug": "3.1.0",
+    "got": "8.3.2",
+    "lodash": "4.17.10",
     "mkdirp": "0.5.1"
   },
   "devDependencies": {
-    "sinon": "1.17.5"
+    "sinon": "6.1.0"
   },
   "scripts": {
     "test": "node ./test.js"

@@ -7,13 +7,17 @@ var trelloBackup = require('./lib');
 var fs = require('./lib/fs');
 var trello = require('./lib/trello');
 
+var stub = function(obj, meth, fn) {
+  return sinon.stub(obj, meth).callsFake(fn);
+};
+
 var tests = [
   function boardNameWithASlash() {
-    sinon.stub(fs, 'readJSONFile', _.constant({ backupDirectory: 'backups' }));
-    sinon.stub(trello, 'getBoards', _.constant(Promise.resolve({ boardId: 'board/name' })));
-    sinon.stub(trello, 'downloadBoard', _.noop);
-    sinon.stub(trello, 'downloadAttachments', _.noop);
-    sinon.stub(console, 'log', _.noop);
+    stub(fs, 'readJSONFile', _.constant({ backupDirectory: 'backups' }));
+    stub(trello, 'getBoards', _.constant(Promise.resolve({ boardId: 'board/name' })));
+    stub(trello, 'downloadBoard', _.noop);
+    stub(trello, 'downloadAttachments', _.noop);
+    stub(console, 'log', _.noop);
     function restore() {
       fs.readJSONFile.restore();
       trello.getBoards.restore();
