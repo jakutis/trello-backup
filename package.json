@@ -1,6 +1,6 @@
 {
   "name": "trello-backup",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Backup your data from Trello",
   "main": "./lib/index.js",
   "bin": "./lib/cli.js",
