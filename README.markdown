@@ -9,9 +9,7 @@ Backup your data from Trello
 
     npm install -g trello-backup
 
-## CLI
-
-    trello-backup ./path/to/config.json
+## Configuration
 
 An example `config.json`:
 
@@ -25,3 +23,13 @@ An example `config.json`:
     }
 
 If the `boards` property is not defined, then all the boards are backed up.
+
+## CLI
+
+### Backup
+
+    trello-backup ./path/to/config.json
+
+### List all cards in a given list in all boards
+
+    trello-backup ./path/to/config.json cards-in-list <list-name>
