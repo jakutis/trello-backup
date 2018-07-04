@@ -1,7 +1,7 @@
 {
   "name": "trello-backup",
   "version": "1.0.6",
-  "description": "Backup your data from Trello",
+  "description": "Backup/download your data from Trello and query it/display interesting views",
   "main": "./lib/index.js",
   "bin": "./lib/cli.js",
   "dependencies": {

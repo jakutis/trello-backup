@@ -1,6 +1,6 @@
 # trello-backup [![Build Status](https://travis-ci.org/jakutis/trello-backup.svg?branch=master)](https://travis-ci.org/jakutis/trello-backup)
 
-Backup your data from Trello
+Backup/download your data from Trello and query it/display interesting views
 
 - [Installation](#installation)
 - [CLI](#cli)
